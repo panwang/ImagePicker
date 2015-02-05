@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">图片拾取器</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="xxxx">请点击图片框选择图片</string>
+    <string name="buttonText">选择图片</string>
+
+</resources>
