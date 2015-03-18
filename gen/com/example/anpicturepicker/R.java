@@ -24,11 +24,21 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080004;
-        public static final int button1=0x7f080003;
-        public static final int imageSet=0x7f080001;
+        public static final int action_settings=0x7f08000e;
+        public static final int bt_setSize=0x7f080003;
+        public static final int button1=0x7f080002;
+        public static final int et_size=0x7f080006;
+        public static final int imageSet=0x7f08000d;
         public static final int imageViewFull=0x7f080000;
-        public static final int textView1=0x7f080002;
+        public static final int ll_choose=0x7f080001;
+        public static final int ll_leixing=0x7f080007;
+        public static final int ll_size=0x7f080004;
+        public static final int rb_bfb=0x7f08000c;
+        public static final int rb_dp=0x7f08000b;
+        public static final int rb_px=0x7f08000a;
+        public static final int rg_typegroup=0x7f080009;
+        public static final int textView2=0x7f080005;
+        public static final int textView3=0x7f080008;
     }
     public static final class layout {
         public static final int activity_fullscreen=0x7f030000;
@@ -41,7 +51,15 @@ public final class R {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int buttonText=0x7f050004;
+        public static final int dstring_p=0x7f050009;
         public static final int hello_world=0x7f050002;
+        public static final int nil=0x7f050007;
+        public static final int string_bfb=0x7f05000a;
+        public static final int string_dw=0x7f050006;
+        public static final int string_hintsize=0x7f05000b;
+        public static final int string_px=0x7f050008;
+        public static final int string_size=0x7f050005;
+        public static final int strng_setsize=0x7f05000c;
         public static final int xxxx=0x7f050003;
     }
     public static final class style {

@@ -9,29 +9,106 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <ImageView
-        android:id="@+id/imageSet"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/ll_choose"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="147dp"
-        android:scaleType="centerInside"
-        android:src="@android:drawable/editbox_dropdown_dark_frame" />
+        android:gravity="center_vertical" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:text="@string/xxxx" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonText" />
 
-    <Button
-        android:id="@+id/button1"
+        <Button
+            android:id="@+id/bt_setSize"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/strng_setsize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_size"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView1"
-        android:text="@string/buttonText" />
+        android:gravity="center_vertical"
+        android:layout_below="@+id/ll_choose" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_size" />
+
+        <EditText
+            android:id="@+id/et_size"
+            android:inputType="phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/string_hintsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_leixing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/ll_size" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_dw" />
+
+        <RadioGroup
+            android:id="@+id/rg_typegroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/string_px" />
+
+            <RadioButton
+                android:id="@+id/rb_dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dstring_p" />
+
+            <RadioButton
+                android:id="@+id/rb_bfb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_bfb" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/ll_leixing"
+        android:gravity="center"
+        android:layout_below="@+id/ll_leixing" >
+
+        <ImageView
+            android:id="@+id/imageSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/nil"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/editbox_dropdown_dark_frame" />
+
+    </RelativeLayout>
 
 </RelativeLayout>
